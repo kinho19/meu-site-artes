@@ -1,0 +1,205 @@
+/*
+**** LIMPAR FORMATAÇÕES ****
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+**** FORMATAÇÕES GENÉRICAS ****
+*/
+body{
+    font-family: serif;
+    color: rgb(233, 176, 31);
+    background: radial-gradient(circle, #f0e48a, #e9bb7a, #c95256); /*graduação de cor no fundo*/
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+
+
+    /*estilizando cor da logo*/
+#headerh1 {
+    font-size: 40px;
+    color: rgb(233, 176, 31);
+    text-shadow: 2px 2px 5px rgb(145, 143, 134);
+}
+
+
+
+h1{
+    color: #252525;
+    font-size: 40px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgb(236, 210, 91);
+}
+
+h3{
+    color: #565656;
+    background: #cccccc;
+    padding: 5px;
+}
+
+
+
+/*
+**** HEADER ****
+*/
+#header{
+    padding: 20px;
+    background: black;
+    text-align: center;
+    font-size: 22px;
+}
+ 
+
+#logo, #menu {
+    padding: 10px;
+}
+
+
+
+#header a:link, #header a:visited{
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+}
+
+#header a:hover{
+    background: #e9bb7a;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.logoblack{
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*
+**** FOOTER ****
+*/
+
+#footer{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    color: #000000;
+}
+
+
+/* *** ADICIONANDO VIDEO NA TELA INCIAL*** */
+
+#display-video {
+    justify-content: center; /*centralizar imagem horizontal*/
+    padding: 30px 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 3px solid black; /*adiciona linha preta separando os conteúdos*/
+}
+
+/* container com texto, video e imagem*/
+#video-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
+    justify-content: space-betwen; /*distribui os elementos*/
+}
+
+/*estilizando video*/
+#video-container video {
+    width: 300px; 
+    flex-shrink:0; /*evita o video diminuir*/
+    height: auto; 
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+/*estilizando o texto*/
+#video-text h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#video-text p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+/*estilizando a imagem*/
+#video-container img {
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+
+
+/*** PARTE - MAIS ALGUMAS ARTES ***/
+
+#gallery h2 {
+    color:black;
+}
+
+
+/** PARTE DE ARTES **/
+
+/*
+**** CONTENT ****
+*/
+#content{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#gallery {
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.post-art{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.post-art img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3 ease-in-out;
+}
+
+.img-post{
+    width: 620px;
+}
+
+#p-desenhos {
+    color: black;
+    font-size: 17px;
+}
+
+/* *** RESPONSIVIDADE PARA TELAS MENORES *** */
+@media (max-width: 768px) {
+    #video-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
