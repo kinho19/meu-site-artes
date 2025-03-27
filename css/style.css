@@ -80,7 +80,7 @@ h3{
     color: black;
     background: #e9bb7a;
     box-shadow: 0px 0px 10px rgba(233, 187, 122, 0.8);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .flecha {
@@ -105,6 +105,9 @@ h3{
     transform: translateX(-5px); /*Move para esquerda*/
 }
 
+#menu a:hover .flecha {
+    transform: translateX(5px); /*faz a seta se mover ao passar o mouse*/
+}
 
 #header a:link, #header a:visited{
     color: rgb(255, 255, 255);
@@ -121,10 +124,6 @@ h3{
 
 .logoblack{
     color: rgb(255, 255, 255);
-}
-
-#menu a:hover .flecha {
-    transform: translateX(5px); /*faz a seta se mover ao passar o mouse*/
 }
 
 
@@ -158,7 +157,7 @@ h3{
     width: 100%;
     max-width: 900px;
     align-items: center;
-    justify-content: space-betwen; /*distribui os elementos*/
+    justify-content: space-between; /*distribui os elementos*/
 }
 
 /*estilizando video*/
@@ -243,8 +242,18 @@ h3{
 
 /* *** RESPONSIVIDADE PARA TELAS MENORES *** */
 @media (max-width: 768px) {
-    #video-container {
+    #video-container {        
         flex-direction: column;
         text-align: center;
+        gap: 20px; /*ajuda a dar espaçamento melhor entre elementos*/
+    }
+
+    .post-art {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .post-art img {
+        width: 100%;
     }
 }
