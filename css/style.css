@@ -80,6 +80,16 @@ h3{
     transform: scale(1.1);
 }
 
+.flecha {
+    font-size: 14px;
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu a:hover .flecha {
+    transform: translateX(5px); /*faz a seta se mover ao passar o mouse*/
+}
+
 #header a:link, #header a:visited{
     color: rgb(255, 255, 255);
     padding: 8px 12px;
