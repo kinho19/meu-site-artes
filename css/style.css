@@ -62,6 +62,48 @@ h3{
     padding: 10px;
 }
 
+/* estilizando o Menu */
+#menu a {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    gap: 6px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#menu a:hover {
+    color: black;
+    background: #e9bb7a;
+    box-shadow: 0px 0px 10px rgba(233, 187, 122, 0.8);
+    transform: scale(1.1);
+}
+
+.flecha {
+    font-size: 20px;
+}
+
+.flecha-esquerda {
+    font-size: 20px;
+    transition: transform 0.3 ease-in-out;
+}
+
+.flecha-direita {
+    font-size: 20px;
+    transition: transform 0.3 ease-in-out;
+}
+
+#menu a:hover .flecha-esquerda {
+    transform: translateX(5px); /*Move para direita*/
+}
+
+#menu a:hover .flecha-direita {
+    transform: translateX(-5px); /*Move para esquerda*/
+}
 
 
 #header a:link, #header a:visited{
@@ -81,6 +123,9 @@ h3{
     color: rgb(255, 255, 255);
 }
 
+#menu a:hover .flecha {
+    transform: translateX(5px); /*faz a seta se mover ao passar o mouse*/
+}
 
 
 /*
